@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlotPlanner.UI", "PlotPlanner.UI\PlotPlanner.UI.csproj", "{BFA12C91-4D44-4CF3-A231-0BDE2291F7B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlotPlanner.Core", "PlotPlanner.Core\PlotPlanner.Core.csproj", "{28641951-641A-4ED6-9D76-868CC249248B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlotPlanner.Data", "PlotPlanner.Data\PlotPlanner.Data.csproj", "{017B234F-2879-460B-9AB7-03843B4074EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlotPlanner.Services", "PlotPlanner.Services\PlotPlanner.Services.csproj", "{CD17F941-D3B6-49CB-B040-AEC886D7A4A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFA12C91-4D44-4CF3-A231-0BDE2291F7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA12C91-4D44-4CF3-A231-0BDE2291F7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA12C91-4D44-4CF3-A231-0BDE2291F7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA12C91-4D44-4CF3-A231-0BDE2291F7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28641951-641A-4ED6-9D76-868CC249248B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28641951-641A-4ED6-9D76-868CC249248B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28641951-641A-4ED6-9D76-868CC249248B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28641951-641A-4ED6-9D76-868CC249248B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017B234F-2879-460B-9AB7-03843B4074EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017B234F-2879-460B-9AB7-03843B4074EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017B234F-2879-460B-9AB7-03843B4074EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017B234F-2879-460B-9AB7-03843B4074EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD17F941-D3B6-49CB-B040-AEC886D7A4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD17F941-D3B6-49CB-B040-AEC886D7A4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD17F941-D3B6-49CB-B040-AEC886D7A4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD17F941-D3B6-49CB-B040-AEC886D7A4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
