@@ -2,6 +2,9 @@ using System;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Platform.Storage;
+using CommunityToolkit.Mvvm.Input;
+using MsBox.Avalonia;
+using MsBox.Avalonia.Enums;
 using PlotPlanner.Services.Interfaces;
 
 namespace PlotPlanner.UI.ViewModels;
@@ -18,7 +21,6 @@ public partial class StartupWindowViewModel : ViewModelBase {
     
     public async Task OpenFile(Window parentWindow) {
         IStorageFile file = await _fileDialogService.ShowOpenFileDialogAsync(parentWindow);
-        Console.Write("Big purrs");
     }
 
     public async Task CreateNewFile(Window parentWindow) {
@@ -28,8 +30,5 @@ public partial class StartupWindowViewModel : ViewModelBase {
         }
     }
 
-    // [RelayCommand]
-    // private async void New(Window parentWindow) {
-    //     
-    // }
+
 }

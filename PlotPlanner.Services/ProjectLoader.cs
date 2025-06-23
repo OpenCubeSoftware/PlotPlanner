@@ -1,6 +1,8 @@
 using System.IO.Compression;
 using System.Text.Json;
 using Microsoft.CodeAnalysis;
+using MsBox.Avalonia;
+using MsBox.Avalonia.Enums;
 using PlotPlanner.Core.Models;
 using PlotPlanner.Data.Repositories.Interfaces;
 using PlotPlanner.Services.Interfaces;
@@ -31,8 +33,9 @@ public class ProjectLoader : IProjectLoader {
 
     public async Task CreateNewProjectAsync(string filePath) {
         if (File.Exists(filePath)) 
-            Console.WriteLine("File already exists"); // Todo: show warning
-        using var zip = ZipFile.OpenRead(filePath);
+            ShowMessageBox("File Exists", "File exists. Do you want to overwrite?");
+        using var zip = ZipFile.Open(filePath, ZipArchiveMode.Create);
+            // ZipFile.OpenRead(filePath);
         AddJson(zip, "characters.json", new { Characters = new List<Character>() });
     }
 
@@ -47,5 +50,13 @@ public class ProjectLoader : IProjectLoader {
         using var stream = new StreamWriter(entry.Open());
         var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true});
         stream.Write(json);
+    }
+
+    private async void ShowMessageBox(string title, string text) {
+        var box = MessageBoxManager
+            .GetMessageBoxStandard(title, text,
+                ButtonEnum.OkCancel);
+
+        var result = await box.ShowAsync();
     }
 }
