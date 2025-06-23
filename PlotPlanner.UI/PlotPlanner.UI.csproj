@@ -23,5 +23,12 @@
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.6" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PlotPlanner.Data\PlotPlanner.Data.csproj" />
+      <ProjectReference Include="..\PlotPlanner.Services\PlotPlanner.Services.csproj" />
     </ItemGroup>
 </Project>

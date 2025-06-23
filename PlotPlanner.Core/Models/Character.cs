@@ -8,12 +8,23 @@ public enum CharacterType {
     Supporting
 }
 
+public enum Gender {
+    Male,
+    Female,
+    NonBinary,
+    Genderfluid,
+    Genderqueer,
+    Agender
+}
+
 public class Character {
     public int Id { get; set; }
     public string GivenName { get; set; }
     public string Surname { get; set; }
     public string DisplayName { get; set; }
     public string NativeLanguageName { get; set; }
+    public string NativeLanguageNameRomanisation { get; set; }
+    public Gender Gender { get; set; }
     public CharacterType CharacterType { get; set; }
     public DateTime DateOfBirth { get; set; }
     public string PlaceOfBirth { get; set; }
@@ -23,7 +34,12 @@ public class Character {
     public string PoliticalViews { get; set; }
     public string ReligiousViews { get; set; }
     public string Biography { get; set; }
+    public string Description { get; set; }
+    public string PhysicalDescription { get; set; }
     public string Motivations { get; set; }
+    public string Evolution { get; set; }
+    public string Goals { get; set; }
+    public string Conflict { get; set; }
     public string Notes { get; set; }
     // public Character LoveInterest { get; set; }
 }

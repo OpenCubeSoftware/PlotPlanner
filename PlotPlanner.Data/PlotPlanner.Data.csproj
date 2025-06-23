@@ -6,4 +6,23 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Update="GenerateRepositories.tt">
+        <Generator>TextTemplatingFileGenerator</Generator>
+      </None>
+      <None Update="RepositoryGenerator.tt">
+        <Generator>TextTemplatingFileGenerator</Generator>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.CodeAnalysis" Version="4.14.0" />
+      <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.14.0" />
+      <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PlotPlanner.Core\PlotPlanner.Core.csproj" />
+    </ItemGroup>
+
 </Project>
